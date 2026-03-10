@@ -1,0 +1,78 @@
+{
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "solid",
+    "editor.smoothScrolling": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": true,
+    "editor.linkedEditing": true,
+    "editor.autoClosingComments": "always",
+    "editor.suggest.preview": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.acceptSuggestionOnEnter": "smart",
+    "workbench.colorTheme": "Default High Contrast",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.reduceMotion": "off",
+    "workbench.statusBar.visible": false,
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.editor.enablePreview": false,
+    "workbench.tips.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ser": "default",
+        "*.html": "default"
+    },
+    "vscode_custom_css.imports": [
+        "file:////Applications/Visual Studio Code.app/cursor.js"
+    ],
+    "terminal.integrated.enableVisualBell": false,
+    "terminal.integrated.fontSize": 13.5,
+    "terminal.integrated.persistentSessionReviveProcess": "never",
+    "terminal.integrated.confirmOnExit": "hasChildProcesses",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmPasteNative": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.preserveFocus": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "C_Cpp.default.compilerPath": "/usr/bin/clang++",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "update.mode": "manual",
+    "security.workspace.trust.untrustedFiles": "open",
+    "redhat.telemetry.enabled": false,
+    "debug.onTaskErrors": "abort",
+    "livePreview.openPreviewTarget": "External Browser",
+    "python.REPL.enableREPLSmartSend": false,
+    "dart.flutterSdkPath": "/Users/develop/flutter",
+    "files.watcherExclude": {
+        "**/node_modules/**": true,
+        "**/.git/**": true,
+        "**/build/**": true,
+        "**/dist/**": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "breadcrumbs.enabled": false
+}
