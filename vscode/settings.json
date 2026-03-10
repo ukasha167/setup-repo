@@ -9,6 +9,7 @@
     "editor.formatOnSave": true,
     "editor.linkedEditing": true,
     "editor.autoClosingComments": "always",
+    "editor.wordWrap": "off",
     "editor.suggest.preview": true,
     "editor.inlineSuggest.enabled": true,
     "editor.acceptSuggestionOnEnter": "smart",
@@ -18,7 +19,7 @@
     "workbench.reduceMotion": "off",
     "workbench.statusBar.visible": false,
     "workbench.editor.empty.hint": "hidden",
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     "workbench.tips.enabled": false,
     "workbench.editorAssociations": {
         "*.ser": "default",
