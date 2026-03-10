@@ -8,17 +8,17 @@ brew "ffmpeg"
 brew "gradle"
 brew "kotlin"
 brew "node"
-brew "postgresql@16"
 brew "raylib"
 brew "sfml"
 brew "yt-dlp"
 brew "stow"
-brew "mas"                          # Mac App Store CLI - needed for section below
+brew "mas"
 
-# MongoDB
+# Databases
 brew "mongodb/brew/mongodb-community@7.0"
+brew "postgresql@16"
 
-# Casks (GUI Apps)
+# Casks
 cask "android-file-transfer"
 cask "android-platform-tools"
 cask "android-studio"
