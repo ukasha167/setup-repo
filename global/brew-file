@@ -25,7 +25,7 @@ cask "android-studio"
 cask "bluestacks"
 cask "dropover"
 cask "figma"
-cask "github"                       # GitHub Desktop
+cask "github"
 cask "google-chrome"
 cask "handbrake"
 cask "keepingyouawake"
