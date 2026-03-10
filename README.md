@@ -76,17 +76,5 @@ This will, in order:
 
 These cannot be automated. Do them after the script finishes.
 
-### SSH Keys (do this first)
-```bash
-ssh-keygen -t ed25519 -C "your@email.com"
-pbcopy < ~/.ssh/id_ed25519.pub
-```
-Then go to GitHub → Settings → SSH and GPG keys → New SSH key → paste.
-
-Verify it works:
-```bash
-ssh -T git@github.com
-```
-
 ### VS Code Extensions
 Sign into your account inside VS Code. Extensions restore automatically via Settings Sync.
