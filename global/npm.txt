@@ -1,0 +1,2 @@
+/opt/homebrew/lib
+└── npm@11.9.0

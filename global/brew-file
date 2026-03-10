@@ -1,0 +1,51 @@
+# Taps
+tap "mongodb/brew"
+
+# CLI Tools
+brew "cmake"
+brew "cocoapods"
+brew "ffmpeg"
+brew "gradle"
+brew "kotlin"
+brew "node"
+brew "postgresql@16"
+brew "raylib"
+brew "sfml"
+brew "yt-dlp"
+brew "stow"
+brew "mas"                          # Mac App Store CLI - needed for section below
+
+# MongoDB
+brew "mongodb/brew/mongodb-community@7.0"
+
+# Casks (GUI Apps)
+cask "android-file-transfer"
+cask "android-platform-tools"
+cask "android-studio"
+cask "bluestacks"
+cask "dropover"
+cask "figma"
+cask "github"                       # GitHub Desktop
+cask "google-chrome"
+cask "handbrake"
+cask "keepingyouawake"
+cask "localsend"
+cask "microsoft-teams"
+cask "microsoft-word"
+cask "microsoft-powerpoint"
+cask "middleclick"
+cask "miniforge"
+cask "mongodb-compass"
+cask "neat-download-manager"
+cask "onedrive"
+cask "postman"
+cask "transmission"
+cask "visual-studio-code"
+cask "vlc"
+cask "wireshark"
+
+# Mac App Store Apps (requires `mas` and being signed in to App Store)
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
+mas "The Unarchiver", id: 425424353  # closest equivalent to your Unzip app

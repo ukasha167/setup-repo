@@ -3,7 +3,7 @@
 // The color of the glowing shadow
 const Color = "#ffffffff" // White Trail
 
-// The opacity of the "hard" trail body. 
+// The opacity of the "hard" trail body.
 // 0.1 gives a subtle ghostly look.
 const TrailOpacity = 0.9
 

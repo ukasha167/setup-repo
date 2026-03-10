@@ -52,7 +52,7 @@
     },
     "C_Cpp.default.compilerPath": "/usr/bin/clang++",
     "C_Cpp.default.intelliSenseMode": "macos-clang-arm64",
-    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cppStandard": "c++23",
     "kotlin.languageServer.enabled": false,
     "kotlin.debugAdapter.enabled": false,
     "update.mode": "manual",
