@@ -41,6 +41,7 @@ cask "onedrive"
 cask "postman"
 cask "transmission"
 cask "visual-studio-code"
+cask "zed"
 cask "vlc"
 cask "wireshark"
 
