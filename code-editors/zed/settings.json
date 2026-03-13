@@ -1,5 +1,6 @@
 {
     // ─── CORE / META ────────────────────────────────────────────────────────────
+    "disable_ai": false,
     "auto_update": false,
     "base_keymap": "VSCode",
     "icon_theme": "Material Icon Theme",
@@ -256,6 +257,7 @@
         "**/*.pyc",
         "**/.mypy_cache",
         "**/.pytest_cache",
+        "**/.cache",
         "**/CMakeFiles",
         "**/*.o",
         "**/*.a",
