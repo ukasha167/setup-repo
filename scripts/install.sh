@@ -51,12 +51,12 @@ else
   echo "npm not found. Skipping. Check your Brewfile includes node."
 fi
 
-printf "\n[6/6] Restoring VS Code..."
+printf "\n[6/6] Code Editorse..."
 VSCODE_DIR="$HOME/Library/Application Support/Code/User"
 
 if [ -d "$VSCODE_DIR" ]; then
-  cp "$REPO_DIR/vscode/settings.json" "$VSCODE_DIR/settings.json"
-  cp "$REPO_DIR/vscode/cursor.js" "file:////Applications/Visual Studio Code.app/cursor.js"
+  cp "$REPO_DIR/code-editors/vs-code/settings.json" "$VSCODE_DIR/settings.json"
+  cp "$REPO_DIR/code-editors/vs-code/cursor.js" "file:////Applications/Visual Studio Code.app/cursor.js"
   echo "VS Code settings restored."
 else
   echo "VS Code Directory Not Found. Copy it manually."
