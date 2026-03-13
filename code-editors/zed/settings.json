@@ -1,4 +1,3 @@
-// ~/.config/zed/settings.json
 {
     // ─── CORE / META ────────────────────────────────────────────────────────────
     "auto_update": false,
@@ -7,15 +6,15 @@
     // ─── THEME ──────────────────────────────────────────────────────────────────
     "theme": {
         "mode": "dark",
-        "light": "One Light",
-        "dark": "macOS Classic Dark"
+        "light": "Ayu Light",
+        "dark": "Ayu Dark"
     },
     // ─── TYPOGRAPHY ─────────────────────────────────────────────────────────────
     "ui_font_size": 16,
     "buffer_font_size": 15,
-    "buffer_font_family": ".ZedMono", // change to your font if different
+    "buffer_font_family": ".ZedMono",
     "buffer_font_features": {
-        "calt": true // ligatures — set false if you dislike them
+        "calt": false
     },
     "buffer_line_height": "comfortable",
     // ─── EDITOR BEHAVIOR ────────────────────────────────────────────────────────
@@ -36,8 +35,8 @@
     "horizontal_scroll_margin": 5,
     "tab_size": 4,
     "hard_tabs": false,
-    // ─── SAVE BEHAVIOR ──────────────────────────────────────────────────────────
     "format_on_save": "on",
+    // ─── SAVE BEHAVIOR ──────────────────────────────────────────────────────────
     "formatter": "language_server",
     "remove_trailing_whitespace_on_save": true,
     "ensure_final_newline_on_save": false,
@@ -189,7 +188,7 @@
         "dock": "bottom",
         "shell": "system",
         "working_directory": "current_project_directory",
-        "font_family": "JetBrains Mono",
+        "font_family": ".ZedMono",
         "font_size": 13.5,
         "line_height": "standard",
         "blinking": "terminal_controlled",
@@ -239,7 +238,6 @@
         "**/.settings",
         "**/node_modules",
         "**/dist",
-        "**/build",
         "**/.next",
         "**/.nuxt",
         "**/target",
@@ -267,8 +265,6 @@
     // ─── LANGUAGE OVERRIDES ─────────────────────────────────────────────────────
     "languages": {
         "Dart": {
-            "tab_size": 2,
-            "format_on_save": "on",
             "formatter": "language_server",
             "remove_trailing_whitespace_on_save": true,
             "indent_guides": {
@@ -276,64 +272,45 @@
             }
         },
         "JavaScript": {
-            "tab_size": 2,
-            "format_on_save": "on",
             "formatter": "language_server"
         },
         "TypeScript": {
-            "tab_size": 2,
-            "format_on_save": "on",
             "formatter": "language_server",
             "document_symbols": "on",
             "semantic_tokens": "combined"
         },
-        "TSX": {
-            "tab_size": 2,
-            "format_on_save": "on"
-        },
-        "HTML": {
-            "tab_size": 2,
-            "format_on_save": "on"
-        },
-        "CSS": {
-            "tab_size": 2,
-            "format_on_save": "on"
-        },
-        "JSON": {
-            "tab_size": 2,
-            "format_on_save": "on"
-        },
         "Python": {
-            "tab_size": 4,
-            "format_on_save": "on",
             "formatter": "language_server",
             "indent_guides": {
                 "enabled": true
             }
         },
         "Java": {
-            "tab_size": 4,
-            "format_on_save": "on",
             "formatter": "language_server",
             "semantic_tokens": "combined"
         },
         "Kotlin": {
-            "tab_size": 4,
-            "format_on_save": "on",
             "formatter": "language_server"
         },
-        "C": {
-            "tab_size": 4,
-            "format_on_save": "on",
-            "formatter": "language_server",
-            "preferred_line_length": 80,
-            "soft_wrap": "preferred_line_length"
-        },
         "C++": {
-            "tab_size": 4,
-            "format_on_save": "on",
-            "formatter": "language_server",
-            "preferred_line_length": 80
+            "formatter": {
+                "external": {
+                    "command": "clang-format",
+                    "arguments": [
+                        "--style={BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, UseTab: Never}"
+                    ]
+                }
+            }
+        },
+        "C": {
+            "formatter": {
+                "external": {
+                    "command": "clang-format",
+                    "arguments": [
+                        "--style={BasedOnStyle: LLVM, IndentWidth: 4, TabWidth: 4, UseTab: Never}"
+                    ]
+                }
+            }
         },
         "SQL": {
             "tab_size": 2,
@@ -344,10 +321,6 @@
             "preferred_line_length": 80,
             "format_on_save": "off",
             "show_edit_predictions": false
-        },
-        "YAML": {
-            "tab_size": 2,
-            "format_on_save": "on"
         }
     }
 }
