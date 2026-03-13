@@ -51,13 +51,20 @@ else
   echo "npm not found. Skipping. Check your Brewfile includes node."
 fi
 
-printf "\n[6/6] Code Editorse..."
+printf "\n[6/6] Code Editors..."
 VSCODE_DIR="$HOME/Library/Application Support/Code/User"
+ZED_DIR="$HOME/.config/zed"
 
 if [ -d "$VSCODE_DIR" ]; then
-  cp "$REPO_DIR/code-editors/vs-code/settings.json" "$VSCODE_DIR/settings.json"
-  cp "$REPO_DIR/code-editors/vs-code/cursor.js" "file:////Applications/Visual Studio Code.app/cursor.js"
-  echo "VS Code settings restored."
+    cp "$REPO_DIR/code-editors/vs-code/settings.json" "$VSCODE_DIR/settings.json"
+    echo "VS Code settings restored."
 else
-  echo "VS Code Directory Not Found. Copy it manually."
+    echo "VS Code Directory Not Found. Copy it manually."
+fi
+
+if [ -d "$ZED_DIR" ]; then
+    cp "$REPO_DIR/code-editors/zed/settings.json" "$ZED_DIR/settings.json"
+    echo "Zed settings restored."
+else
+    echo "Zed directory not found. Copy it manually."
 fi
