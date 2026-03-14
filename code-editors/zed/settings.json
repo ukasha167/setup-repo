@@ -150,7 +150,7 @@
     "lsp_highlight_debounce": 75,
     "hover_popover_enabled": true,
     "hover_popover_delay": 350,
-    "auto_signature_help": true,
+    "auto_signature_help": false,
     "global_lsp_settings": {
         "button": true,
         "request_timeout": 120,
