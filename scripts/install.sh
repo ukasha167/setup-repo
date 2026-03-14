@@ -64,6 +64,7 @@ fi
 
 if [ -d "$ZED_DIR" ]; then
     cp "$REPO_DIR/code-editors/zed/settings.json" "$ZED_DIR/settings.json"
+    cp "$REPO_DIR/code-editors/zed/keymap.json" "$ZED_DIR/keymap.json"
     echo "Zed settings restored."
 else
     echo "Zed directory not found. Copy it manually."
