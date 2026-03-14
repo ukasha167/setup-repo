@@ -1,0 +1,29 @@
+[
+    {
+        "context": "Workspace",
+        "bindings": {}
+    },
+    {
+        "context": "Editor && vim_mode == insert",
+        "bindings": {}
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "cmd-0": "editor::MoveToEndOfParagraph",
+            "cmd-9": "editor::MoveToStartOfParagraph",
+            "pageup": [
+                "editor::MoveUpByLines",
+                {
+                    "lines": 10
+                }
+            ],
+            "pagedown": [
+                "editor::MoveDownByLines",
+                {
+                    "lines": 10
+                }
+            ]
+        }
+    }
+]
