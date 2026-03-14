@@ -1,5 +1,19 @@
 {
     // ─── CORE / META ────────────────────────────────────────────────────────────
+    "agent": {
+        "default_profile": "write",
+        "default_model": {
+            "provider": "copilot_chat",
+            "model": "gpt-5.1-codex-max",
+            "enable_thinking": false
+        },
+        "favorite_models": [],
+        "model_parameters": []
+    },
+    "agent_servers": {},
+    "git_panel": {
+        "sort_by_path": true
+    },
     "disable_ai": false,
     "auto_update": false,
     "base_keymap": "VSCode",
@@ -30,7 +44,7 @@
     "colorize_brackets": true,
     "use_smartcase_search": true,
     "selection_highlight": true,
-    "preferred_line_length": 80,
+    "preferred_line_length": 120,
     "scroll_beyond_last_line": "vertical_scroll_margin",
     "vertical_scroll_margin": 8,
     "horizontal_scroll_margin": 5,
@@ -320,7 +334,6 @@
         },
         "Markdown": {
             "soft_wrap": "preferred_line_length",
-            "preferred_line_length": 80,
             "format_on_save": "off",
             "show_edit_predictions": false
         }
